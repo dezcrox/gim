@@ -21,8 +21,6 @@
                 'views/ir_cron.xml',
                 'data/mercadopago.xml',
             ],
-    'external_dependencies': {
-                                'python' : ['mercadopago'],
-                             },
+    
     'installable': True,
 }
