@@ -22,7 +22,7 @@
                 'data/mercadopago.xml',
             ],
     'external_dependencies': {
-                                'python' : ['mercadopago==0.3.4'],
+                                'python' : ['mercadopago'],
                              },
     'qweb': [
               
