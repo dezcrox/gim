@@ -21,6 +21,9 @@
                 'views/ir_cron.xml',
                 'data/mercadopago.xml',
             ],
+    'external_dependencies': {
+                                'python' : ['mercadopago==0.3.4'],
+                             },
     'qweb': [
               
             ],
