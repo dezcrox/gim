@@ -24,8 +24,5 @@
     'external_dependencies': {
                                 'python' : ['mercadopago'],
                              },
-    'qweb': [
-              
-            ],
     'installable': True,
 }
