@@ -1,0 +1,58 @@
+<div class="form-mercadopago-custom">
+    <form id="form-checkout">        
+
+        <h4><i class="fa fa-user"></i>Información del Titular</h4>
+
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <input type="text" name="cardholderName" id="form-checkout__cardholderName"/>
+            </div>
+            <div class="form-group col-md-3">
+                <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail"/>
+            </div>                          
+        </div>                
+
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <select name="identificationType" id="form-checkout__identificationType"></select>
+            </div>
+            <div class="form-group col-md-4">
+                <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"/>
+            </div>            
+        </div> 
+
+        <h4><i class="fa fa-credit-card"></i>Información de la Tarjeta</h4>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <input type="text" name="cardNumber" id="form-checkout__cardNumber" />    
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-1">
+                <input type="text" name="cardExpirationMonth" id="form-checkout__cardExpirationMonth" />
+            </div>
+            <div class="form-group col-md-1">
+                <input type="text" name="cardExpirationYear" id="form-checkout__cardExpirationYear" />
+            </div>   
+            <div class="form-group col-md-2">
+                <input type="text" name="securityCode" id="form-checkout__securityCode" />
+            </div>  
+            <div class="form-group col-md-2">
+                <select name="installments" id="form-checkout__installments"></select>
+            </div>        
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <select name="issuer" id="form-checkout__issuer"></select>
+            </div>          
+        </div>
+
+        <div class="form-row">
+            <button type="submit" id="form-checkout__submit" class="btn btn-default btn-hidden">Pagar</button>
+            <progress value="0" class="progress-bar">Cargando...</progress>
+        </div>
+
+     </form>
+</div>
