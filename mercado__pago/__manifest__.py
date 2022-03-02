@@ -12,12 +12,7 @@
     'support': 'rockscripts@gmail.com',
     'category': 'Website',
     "images": ["images/banner.png"],
-    'depends': [
-                    'base',
-                    'website_sale',
-                    'payment',
-                    'account'
-                ],
+    'depends': ['base','website_sale','payment','account'],
     'data': [
                 'views/templates.xml',
                 'views/payment_acquirer.xml',
@@ -26,8 +21,8 @@
                 'views/ir_cron.xml',
                 'data/mercadopago.xml',
             ],
-    'external_dependencies': {
-                                'python' : ['mercadopago'],
-                             },
+    'qweb': [
+              
+            ],
     'installable': True,
 }
