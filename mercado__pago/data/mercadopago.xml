@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<data noupdate="1">
+		<record id="payment_acquirer_mercado_pago" model="payment.acquirer">
+			<field name="name">Mercado Pago</field>
+			<field name="provider">mercadopago</field>
+			<field name="image_128" type="base64" file="mercado__pago/static/description/icon.png" />
+			<field name="mp_service_mode">basic</field>
+			<field name="mp_country">MCO</field>
+		</record>
+	</data>
+
+	<record id="payment_journal_payu" model="account.journal">
+		<field name="name">MercadoPago</field>
+		<field name="code">MEPGO</field>
+		<field name="type">bank</field>
+	</record>
+	
+	<record id="payment_icon" model="payment.icon">
+		<field name="name">MERCADOPAGO</field>
+		<field name="image" type="base64" file="mercado__pago/static/description/icon.png" />
+	</record>
+
+</odoo>

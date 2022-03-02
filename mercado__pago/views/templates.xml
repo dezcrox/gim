@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+         <template id="assets_front_end" inherit_id="website.assets_frontend">
+            <xpath expr="." position="inside">
+            <script type="text/javascript" src="/mercado__pago/static/src/js/jquery.js"></script>
+                <script type="text/javascript" src="/mercado__pago/static/src/js/mercado-pago.js"></script>
+                <script type="text/javascript" src="/mercado__pago/static/src/js/framework.js"></script>
+                <link rel="stylesheet" href="/mercado__pago/static/src/css/mercado-pago.css"/>                
+            </xpath>
+        </template>
+         <template id="assets_back_end" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/mercado__pago/static/src/css/mercado-pago.css"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>
