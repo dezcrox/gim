@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>	
+        <record id="mercadopago_pending_transactions" forcecreate='True' model="ir.cron">
+            <field name="name">MercadoPago - Process Pending Payments</field>
+            <field name="active" eval="True" />
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">8</field>
+            <field name="interval_type">minutes</field>
+            <field name="numbercall">-1</field>
+            <field name="model_id" ref="payment.model_payment_acquirer"/>
+            <field name="state">code</field>
+            <field name="code">env['payment.acquirer'].mercadopago_sync_orders_payments()</field>
+        </record>
+    </data>
+</odoo>
