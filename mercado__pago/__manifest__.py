@@ -5,7 +5,7 @@
     'author': "ROCKSCRIPTS",
     'website': "https://instagram.com/rockscripts",
     'summary': "Mercado Pago para sitio web de comercio electrónico",
-    'version': '0.1',
+    'version': '0.2',
     "license": "OPL-1",
     'price':'60',
     'currency':'USD',
