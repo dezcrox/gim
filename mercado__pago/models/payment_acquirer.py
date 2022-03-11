@@ -240,7 +240,11 @@ class payment_acquirer_mercadopago(models.Model):
         # processing_mode : frecuently aggregator
         # merchant_account_id : frecuently null
 
-        site_name = _ml_sites[_response['site_id']][0]
+        site_name = str('México')
+        try:
+            site_name = _ml_sites[_response['site_id']][0]
+        except:
+            pass 
         payment_type_name = _ml_payment_types[_response['payment_type']]
         status = _statusText[_response['collection_status']]
         status_detail = str("")
